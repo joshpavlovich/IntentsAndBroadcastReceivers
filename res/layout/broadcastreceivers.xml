@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/broadcastLinearLayout"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="25dp">
+
+    <Button
+        android:id="@+id/broadcastGreenButton"
+        android:layout_width="fill_parent"
+        android:text="Send Broadcast of Green"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/broadcastCyanButton"
+        android:layout_width="fill_parent"
+        android:text="Send Broadcast of Cyan"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="25dp">
+
+    <Button
+        android:id="@+id/browseIntentButton"
+        android:layout_width="fill_parent"
+        android:text="Browse to Website"
+        android:contentDescription="Browse to okccoco.com"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/dialIntentButton"
+        android:layout_width="fill_parent"
+        android:text="Dial a Number"
+        android:contentDescription="Dial okccoco's phone number"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/mapIntentButton"
+        android:layout_width="fill_parent"
+        android:text="Map a Location"
+        android:contentDescription="Map okccoco's location"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/searchIntentButton"
+        android:layout_width="fill_parent"
+        android:text="Search the Web"
+        android:contentDescription="Search the web for okccoco"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

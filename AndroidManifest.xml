@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="org.okcdroid.intentsAndBroadcastReceivers"
+      android:versionCode="1"
+      android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+
+        <activity android:name=".activity.IntentsAndBroadcastReceiversActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.IntentsActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="org.okcdroid.intentsAndBroadcastReceivers.action.INTENTS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.BroadcastReceiversActivity"
+                        android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="org.okcdroid.intentsAndBroadcastReceivers.action.BROADCASTRECEIVERS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".receiver.ColorReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="org.okcdroid.intentsAndBroadcastReceivers.action.COLOR_RECEIVER" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".service.ColorService" />
+
+    </application>
+</manifest>
